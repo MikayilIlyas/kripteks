@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kripteks Tool</title>
+</head>
+<body>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <font color="brown"><h2>Kripteks tool</h2></font>
+    <hr>
+    <p>
+    	<font color="gray"><i>Hello Friends. After a long time, I am here with a 'Kripteks' software that I prepared for CW / Logistics.</font></i>
+
+
+    </p>
+   <i><h3>What is Kripteks?</h3></i>
+   <p>
+   	For a moment, everyone remembered the Valley of the Wolves. Yes, I got your name from there.
+  <u>Crypeks is an encryption (Encryption) and Decryption software encoded in Python language.</u> The principle of operation is to try to decipher the encryption by making a dictionary attack (added later) with the Word Lists it contains.
+  It does not require an internet connection and is very fast. Many new features will be added in future updates and all errors encountered during use will be removed.
+  This is my first project and I would like to thank my <b>@Kalem_21</b> teacher for his support and help in my project. 
+  <br>
+<b>Algorithms are supported.</b>
+<br>
+[1] md5<br>
+[2] sha3_224<br>
+[3] sha1<br>
+[4] sha3_384<br>
+[5] sha384<br>
+[6] blake2b<br>
+[7] blake2s<br>
+[8] sha512<br>
+[9] sha224<br>
+[10] sha256<br>
+[11] sha3_512<br>
+[12] sha3_256<br>
+
+<li><b><font color="red">Attention!</b> </font> No code or code fragment was copied from any other software while coding this software. Cryptex is a CW software.</p>
+
+<i><h3>Usage and parameters.</h3></i>
+Although the cryptex software is console based, I tried to make it as User Friendly as I can. The colors and shades used are easy to read and easy to wear.
+importance is given to be.
+Let's first look at the cryptex folder.
+
+<img src="images/6.png"><br>
+<b><i>Logs folder : </i></b>
+
+<p>Encryption and Decryption operations logged here.</p>
+
+<img src="images/logs.png">
+
+<br>
+
+<p>
+  Let's take a look at the Log file that occurs after doing the Sample Encryption.
+</p>
+
+<img src="images/txt.png">
+
+<br>
+<b><i>Wordlist folder:</i></b> <br>
+Some worlists are ready to download in the software to make the user work easier. After giving the download command, all downloaded wordlists are added here. If you create a Wordlist file yourself, I suggest adding it here. <br> 
+<b><i>cw_loj.py, dec.py, enc.py:</i></b> <br>
+modules and functions created by myself to do the necessary operations. <br>
+<b><i>kripteks.py:</i></b> <br>
+The program we will use. <br>
+
+Now let's see how it is used<br>
+<code>python3 kripteks.py -c help or python3 kripteks.py --command help</code> <br>
+<br>
+<img src="images/1.png">
+
+<p>
+  <br>
+<b>Options:  </b><br>
+
+     -c (--command =): To write the commands specified below  <br>
+
+         help: Getting help: python3 kripter.py -c help  <br>
+
+         hashes: looking at supported algorithms  <br>
+
+         info: Notes about the software and the developer: python3 kripter.py -c info  <br>
+
+         framework: Kripteks-framework (Active in the current version): python3 kripter.py -c framework  <br>
+
+         settings: Go to settings: python3 kripter.py -c settings  <br></p>
+
+<code>python3 kripteks.py -c info</code><br>
+<img src="images/2.png">
+  <br>
+<h3><i><font color="brown">Encryption</font></i></h3>  <hr>
+<p>
+
+<b>Encryption:<br></b>
+     -e (--encrypt =): Type the encryption algorithm. (md5, sha1, sha224 and other [-c hashes])<br>
+     -s (--string =): Type the word you want to encrypt. (Gap / probel is not supported)<br>
+     -f (--file =): Add the text file you want to encrypt. (Only supports .txt)<br>
+<b>Use</b> :<br>
+     python3 kripteks.py -e [algorithm] -s [string]<br>
+     python3 kripteks.py -e [algorithm] -f [file.txt]<br>
+</p>
+<br>
+<code>python3 kripteks.py –e md5 –s cyber-warrior</code>
+<br>
+<img src="images/3.png">
+<br>
+<img src="images/4.png"><br><br>
+<b><i>Encrypt words in file</b></i><br>
+<code>python3 kripteks.py –e blake2s –f wordlist/test.txt</code><br>
+
+<img src="images/5.png">
+<br><br>
+<font color="brown"><h3><i>Decryption</i></h3></font>
+<hr>
+<p>
+  
+
+<b>Decryption:</b><br>
+     -d (--decrypt =): Type the encryption algorithm to decipher. (md5, sha1, sha224 and other [-c hashes])<br>
+     -h (--hash =): Add encrypted text <br>
+     -f (--file =): Add your Wordlist<br>
+<br>
+     <b>Use :<br></b>
+     python3 kripteks.py -d [algorithm] -h [hashed_string] -f [wordlist.txt]<br>
+     or python3 kripteks.py --decrypt = [algorithm] --hash = [hashed_string] --file = [wordlist.txt]<br>
+<code>python3 kripteks.py –d hash_type –h hashed_str –f worlist/test.txt</code>
+<br>
+<img src="images/7.png">
+</p>
+<br><br>
+<font color="brown"><h3><i>Settings</i></h3></font>
+<hr>
+<p>It is no longer necessary to write a command here. Your job will be easier with inputs.</p>
+<br>
+<img src="images/8.png"><br>
+<p>
+  
+[1] Install Wordlist - Worlist installation<br>
+[2] Clear logs - Clean all log files (in the logs folder).<br>
+[3] Make wordlist (in the next update)<br>
+[4] Change banner (in the next update)<br>
+[0] Exit (exit)<br>
+
+
+
+</p> <hr><hr>
+Thanks to reading. <br>
+mail : illegal_coder@protonmail.com
+<br>
+<br>
+
+
+
+
+
+
+
+
+
+</body>
+</html>
