@@ -108,7 +108,7 @@ This software working is only Linux
 \33[32m\33[1m [>] Special thanks : \33[0m Thanks to all Cyber-Warrior mmembers and special thanks to my Master \33[1m\33[3mKalem_21\33[0m
 \33[32m\33[1m [>] Loves    : \33[0m To \33[37m\33[1m\33[33m GALATA\33[31mSARAY
 \33[32m\33[1m [>] Github   : \33[0m https://github.com/MikayilIlyas/kripteks
-\33[32m\33[1m [>] Youtube  : \33[0m https://youtu.be/-tq5V07UXXc
+\33[32m\33[1m [>] Youtube  : \33[0m https://www.youtube.com/watch?v=DyOao4WyT8s
 
 
 
